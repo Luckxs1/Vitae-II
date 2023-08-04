@@ -22,6 +22,14 @@
       element.className = element.className.replace(/link-dark/, 'text-white');
     });
 
+    document.querySelectorAll('.btn-primary').forEach((element) => {
+      element.className = element.className.replace(/btn-primary/, 'btn-outline-primary');
+    });
+
+    document.querySelectorAll('.btn-secondary').forEach((element) => {
+      element.className = element.className.replace(/btn-secondary/, 'btn-outline-secondary');
+    });
+
     document.body.classList.add('bg-dark');
 
     if (document.body.classList.contains('text-dark')) {
@@ -55,6 +63,14 @@
 
     document.querySelectorAll('.text-white').forEach((element) => {
       element.className = element.className.replace(/text-white/, 'link-dark');
+    });
+
+    document.querySelectorAll('.btn-outline-primary').forEach((element) => {
+      element.className = element.className.replace(/btn-outline-primary/, 'btn-primary');
+    });
+
+    document.querySelectorAll('.btn-outline-secondary').forEach((element) => {
+      element.className = element.className.replace(/btn-outline-secondary/, 'btn-secondary');
     });
 
     document.body.classList.add('bg-light');
