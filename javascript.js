@@ -14,6 +14,7 @@
    * Basically, replaces/toggles every CSS class that has '-light' class with '-dark'
    */
   function darkMode() {
+    document.getElementById('switchName').innerHTML = "Dark";
     document.querySelectorAll('.bg-light').forEach((element) => {
       element.className = element.className.replace(/-light/g, '-dark');
     });
@@ -22,8 +23,8 @@
       element.className = element.className.replace(/link-dark/, 'text-white');
     });
 
-    document.querySelectorAll('.btn-primary').forEach((element) => {
-      element.className = element.className.replace(/btn-primary/, 'btn-outline-primary');
+    document.querySelectorAll('.btn-danger').forEach((element) => {
+      element.className = element.className.replace(/btn-danger/, 'btn-outline-danger');
     });
 
     document.querySelectorAll('.btn-secondary').forEach((element) => {
@@ -57,6 +58,7 @@
    * @summary: changes the theme to 'light mode' and save settings to local stroage.
    */
   function lightMode() {
+    document.getElementById('switchName').innerHTML = "Light";
     document.querySelectorAll('.bg-dark').forEach((element) => {
       element.className = element.className.replace(/-dark/g, '-light');
     });
@@ -65,8 +67,8 @@
       element.className = element.className.replace(/text-white/, 'link-dark');
     });
 
-    document.querySelectorAll('.btn-outline-primary').forEach((element) => {
-      element.className = element.className.replace(/btn-outline-primary/, 'btn-primary');
+    document.querySelectorAll('.btn-outline-danger').forEach((element) => {
+      element.className = element.className.replace(/btn-outline-danger/, 'btn-danger');
     });
 
     document.querySelectorAll('.btn-outline-secondary').forEach((element) => {
