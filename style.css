@@ -88,6 +88,16 @@ a {
   transition-delay: 0.5ms;
 }
 
+#switchName:Hover {
+  transition: 1s;
+  transition-delay: 0.3ms;
+}
+#switchName {
+  border: none;
+  transition: 1s;
+  transition-delay: 0.3ms;
+}
+
 
 @keyframes blinkTextCursor {
   from {

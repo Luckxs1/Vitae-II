@@ -14,7 +14,7 @@
    * Basically, replaces/toggles every CSS class that has '-light' class with '-dark'
    */
   function darkMode() {
-    document.getElementById('switchName').innerHTML = "Dark";
+    document.getElementById('switchName').innerHTML = "Let there be Light";
     document.querySelectorAll('.bg-light').forEach((element) => {
       element.className = element.className.replace(/-light/g, '-dark');
     });
@@ -58,7 +58,7 @@
    * @summary: changes the theme to 'light mode' and save settings to local stroage.
    */
   function lightMode() {
-    document.getElementById('switchName').innerHTML = "Light";
+    document.getElementById('switchName').innerHTML = "Turn of the Light";
     document.querySelectorAll('.bg-dark').forEach((element) => {
       element.className = element.className.replace(/-dark/g, '-light');
     });
