@@ -12,7 +12,6 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="style-2.scss">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
 </head>
@@ -20,8 +19,8 @@
 <body>
   <header class="mb-5 pb-5">
    <nav class="navbar fixed-top navbar-expand-sm navbar-light bg-light ">
-      <div class="container" id="nav-tab" role="tablist">
-        <a class="navbar-brand nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true" href="#">
+      <div class="container">
+        <a class="navbar-brand nav-link" href="index.html">
             <img src="https://media.licdn.com/dms/image/D5603AQFltGw9NnK10w/profile-displayphoto-shrink_800_800/0/1665396776784?e=1695859200&v=beta&t=NOus8E2y2dF1_4oqsB7UzOr7QBE0O0zkt7R8ukrQRPU" class="rounded-circle" alt="" width="30" height="30">
             Lucky's Profile</a>
         <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
@@ -31,7 +30,7 @@
         <div class="collapse navbar-collapse" id="collapsibleNavId">
             <ul class="navbar-nav me-auto mt-2 mt-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false" href="#">About me</a>
+                    <a class="nav-link active" href="About.html">About me</a>
                 </li>
                 
                 <li class="nav-item dropdown">
@@ -61,8 +60,8 @@
                       </svg>
                       Theme
                     </label> -->
-                    <input type="checkbox" class="btn-check" id="lightSwitch" checked autocomplete="off">
-                    <label class="btn form-check-label ms-3" id="switchName" for="lightSwitch">Let there be Light</label>
+                    <input type="checkbox" class="btn-check" id="lightSwitch">
+                    <label class="btn form-check-label ms-3" id="switchName" for="lightSwitch"></label>
 
                     <!-- <input class="form-check-input " type="checkbox" id="lightSwitch" /> -->
                   </div>
@@ -74,9 +73,9 @@
    
   </header>
   <main>
-    <div>
-      <div class="tab-content" id="nav-tabContent">
-        <div class="tab-pane fade active show" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+   
+    
+        
           <!-- <div class="container-fluid px-0">
             <div class="row">
               <div class="col-md-12">
@@ -84,19 +83,17 @@
               </div>
             </div>
           </div> -->
-          <div class="px-4 py-5 mt-5 cont-1">
+          <div class=" pt-5 cont-1">
             <!-- <img class="d-block mx-auto mb-4 rounded-circle" src="https://media.licdn.com/dms/image/D5603AQFltGw9NnK10w/profile-displayphoto-shrink_800_800/0/1665396776784?e=1695859200&v=beta&t=NOus8E2y2dF1_4oqsB7UzOr7QBE0O0zkt7R8ukrQRPU" alt="Icon" width="72" height="72"> -->
-            <h1 class="display-5 mx-auto type-1 ">About Me</h1>
-            <div class="col-xs-12 col-ms-12 col-md-12 col-lg-12 col-xl-6 mx-auto">
-              <p class="lead mb-4">I have been working as an IT specialist for over five years, and I love every aspect of my
-                job. I provide technical support and solutions to various clients and organizations,
-                ranging from small businesses to large corporations. I troubleshoot and resolve issues
-                related to hardware, software, networks, and security systems. I also install, configure,
-                and maintain IT equipment and applications. I enjoy working with different
-                technologies and learning new skills every day. I find it rewarding to help people and
-                organizations achieve their goals and improve their productivity through IT.</p>
+            <h1 class="display-5 mx-auto type-1 ">About Lucky</h1>
+            <div class="col-xs-12 col-ms-12 col-md-12 col-lg-9 col-xl-6 mx-auto">
+              <p class="lead mb-4 text-justify">I am a versatile and creative professional who enjoys making various kinds of digital products. 
+                I have experience in working with Windows Server, installing different operating systems, and creating videos and websites. 
+                I am proficient in using various software tools and platforms to deliver high-quality and engaging content for my clients and audience. 
+                I am also passionate about 3D arts and I use free software Blender to create models and basic animation. 
+                I love to explore new possibilities and challenges in the digital world and I am always eager to learn new skills and techniques</p>
               <div class="d-grid gap-2 d-sm-flex ">
-                <a href="#" class="btn btn-secondary btn-lg px-4 gap-3" id="btn-H">Experience</a>
+                <a href="Experience.html" class="btn btn-secondary btn-lg px-4 gap-3" id="btn-H">Experience</a>
                 <a href="mailto:yunquelucky@Gmail.com" class="btn btn-outline-danger btn-lg px-4" id="btn-H">Get in touch <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-in-up-right" viewBox="0 0 16 16">
                   <path fill-rule="evenodd" d="M6.364 13.5a.5.5 0 0 0 .5.5H13.5a1.5 1.5 0 0 0 1.5-1.5v-10A1.5 1.5 0 0 0 13.5 1h-10A1.5 1.5 0 0 0 2 2.5v6.636a.5.5 0 1 0 1 0V2.5a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 .5.5v10a.5.5 0 0 1-.5.5H6.864a.5.5 0 0 0-.5.5z"/>
                   <path fill-rule="evenodd" d="M11 5.5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793l-8.147 8.146a.5.5 0 0 0 .708.708L10 6.707V10.5a.5.5 0 0 0 1 0v-5z"/>
@@ -218,24 +215,14 @@
 
 
 
-             </div>
-
-            </div>
+          
             
           </div>
          
         </div>
 
-        <div class="tab-pane fade container" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-          <p><strong>This is some placeholder content the Profile tab's associated content.</strong> Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling. You can use it with tabs, pills, and any other <code>.nav</code>-powered navigation.</p>
-        </div>
-
-        <!-- <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
-          <p><strong>This is some placeholder content the Contact tab's associated content.</strong> Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling. You can use it with tabs, pills, and any other <code>.nav</code>-powered navigation.</p>
-        </div> -->
-
-      </div>
-    </div>
+     
+  
   </main>
      <!-- Footer -->
   <footer class="text-center text-white card-dark">
