@@ -238,3 +238,9 @@ a {
   text-indent: 5rem;
 }
 
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+

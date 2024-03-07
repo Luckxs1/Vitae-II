@@ -1,0 +1,240 @@
+/* #lightSwitch {
+  transform: scale(1.8);
+} */
+
+/* .custom-theme.bg-light {
+  background-color: darkslategray !important;
+  border-radius: 3px;
+  color: gainsboro;
+  text-decoration: underline;
+}
+
+.custom-theme.bg-dark {
+  background-color: blanchedalmond !important;
+  box-shadow: 10px 5px 5px rgba(246, 255, 219, 0.5);
+  color: dimgray;
+  text-decoration: overline;
+} */
+
+
+        /* <button 
+        class="nav-link active" 
+        id="nav-home-tab" 
+        data-bs-toggle="tab" 
+        data-bs-target="#nav-home" 
+        type="button" 
+        role="tab" 
+        aria-controls="nav-home" 
+        aria-selected="true">Home
+        </button>  */
+
+        /* https://getbootstrap.com/docs/5.0/examples/cheatsheet/#scrollspyHeading2 */
+
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
+
+/* Base */
+.cont-1 {
+  padding: 0;
+  margin: 0;
+  /* background-color: #000; */
+  /* display: flex; */
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+.type-1 {
+  position: relative;
+  color: hsl(0, 0%, 68%);
+  font-weight: bold;
+  font-family: "Anonymous Pro", monospace;
+  letter-spacing: 7px;
+  overflow: hidden;
+  border-right: 2px solid hsl(0, 0%, 80%);
+  white-space: nowrap;
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+    blinkTextCursor 500ms infinite;
+}
+
+#Img-H:Hover {
+  /* transform: translate(-10px,-15px); */
+  transform: scale(1.2);
+  transition: 0.5s;
+  transition-delay: 0.5ms;
+
+}
+a:hover {
+  text-decoration: none !important;
+  transition: 1s;
+  transition-delay: 0.3ms;
+}
+a {
+  transition: 2s;
+  transition-delay: 0.5ms;
+}
+#Img-H {
+
+  transition: 2s;
+  transition-delay: 1ms;
+
+}
+
+.btn-H:Hover {
+  transform: translate(0px, -10px);
+  transition: 0.5s;
+  transition-delay: 0.3ms;
+}
+
+.btn-H {
+  transition: 2s;
+  transition-delay: 0.5ms;
+}
+
+#switchName:Hover {
+  transition: 1s;
+  transition-delay: 0.3ms;
+}
+#switchName {
+  border: none;
+  transition: 1s;
+  transition-delay: 0.3ms;
+}
+
+
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: hsl(0, 0%, 80%);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+
+
+ /* Extra small devices (phones, 600px and down) */
+ @media only screen and (max-width: 600px) {
+  @keyframes typewriter {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+
+ }
+
+ /* Small devices (portrait tablets and large phones, 600px and up) */
+ @media only screen and (min-width: 600px) {
+  @keyframes typewriter {
+    from {
+      width: 0;
+    }
+    to {
+      width: 75%;
+    }
+  }
+ }
+ 
+ /* Medium devices (landscape tablets, 768px and up) */
+ @media only screen and (min-width: 768px) {
+  
+ }
+ 
+ /* Large devices (laptops/desktops, 992px and up) */
+ @media only screen and (min-width: 992px) {
+  
+ }
+ 
+ /* Extra large devices (large laptops and desktops, 1200px and up) */
+ @media only screen and (min-width: 1200px) {
+  @keyframes typewriter {
+    from {
+      width: 0;
+    }
+    to {
+      width: 75%;
+    }
+  }
+ } 
+
+
+ /* Theme Mode */
+ .bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+
+.b-example-divider {
+  width: 100%;
+  height: 3rem;
+  background-color: rgba(0, 0, 0, .1);
+  border: solid rgba(0, 0, 0, .15);
+  border-width: 1px 0;
+  box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+}
+
+.b-example-vr {
+  flex-shrink: 0;
+  width: 1.5rem;
+  height: 100vh;
+}
+
+.bi {
+  vertical-align: -.125em;
+  fill: currentColor;
+}
+
+.nav-scroller {
+  position: relative;
+  z-index: 2;
+  height: 2.75rem;
+  overflow-y: hidden;
+}
+
+.nav-scroller .nav {
+  display: flex;
+  flex-wrap: nowrap;
+  padding-bottom: 1rem;
+  margin-top: -1px;
+  overflow-x: auto;
+  text-align: center;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+
+.btn-bd-primary {
+  --bd-violet-bg: #ff42428a;
+  --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+  --bs-btn-font-weight: 600;
+  --bs-btn-color: var(--bs-white);
+  --bs-btn-bg: var(--bd-violet-bg);
+  --bs-btn-border-color: var(--bd-violet-bg);
+  --bs-btn-hover-color: var(--bs-white);
+  --bs-btn-hover-bg: #e02828;
+  --bs-btn-hover-border-color: #e02828;
+  --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+  --bs-btn-active-color: var(--bs-btn-hover-color);
+  --bs-btn-active-bg: #c82323;
+  --bs-btn-active-border-color: #c82323;
+}
+.bd-mode-toggle {
+  z-index: 1500;
+}
+
+.text-justify {
+  text-align: justify;
+  text-justify: inter-word;
+  text-indent: 5rem;
+}
+
