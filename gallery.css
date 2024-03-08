@@ -38,7 +38,7 @@ footer{
 }
 
 .main .gallery .img:first-child {
-    grid-column-start: span 2;
+    grid-column-start: span 1;
     grid-row-start: span 2;
 }
 .main .gallery .img:nth-child(2n+3) {
