@@ -1,3 +1,9 @@
 {
-    "liveServer.settings.port": 5502
+    "liveServer.settings.port": 5502,
+    "vscode-pets.position": "explorer",
+    "vscode-pets.throwBallWithMouse": true,
+    "vscode-pets.petType": "cat",
+    "vscode-pets.petColor": "akita",
+    "vscode-pets.theme": "none",
+    "vscode-pets.petSize": "medium"
 }
