@@ -213,7 +213,7 @@ a {
 }
 
 .btn-bd-primary {
-  --bd-violet-bg: #ff42428a;
+  --bd-violet-bg: #4747478a;
   --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
 
   --bs-btn-font-weight: 600;
@@ -244,3 +244,40 @@ a {
   margin-right: auto;
 }
 
+/* NEW */
+
+.dangrek {
+  font-size: 25px;
+
+  text-decoration: none;
+  font-weight: 600;
+  font-family: "Dangrek", sans-serif;
+}
+
+.nav-link-a {
+  text-decoration: none;
+  padding-left: 30px;
+}
+
+.hero-lux {
+  background-image: url(Assets/grass.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: -200px;
+}
+
+/* .track {
+  color: #c82323;
+  position: absolute;
+  white-space: nowrap;
+  will-change: transform;
+  animation: marquee 32s linear infinite;
+  bottom: -100px;
+}
+
+.hello {
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+} */

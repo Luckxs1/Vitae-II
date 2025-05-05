@@ -3,715 +3,217 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Lucky Yunque</title>
-    <link rel="icon" type="image/x-icon" href="https://avatars.githubusercontent.com/u/73579185?v=4">
+    <title>Lux.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dangrek&display=swap" rel="stylesheet">    <link rel="icon" type="image/x-icon" href="https://avatars.githubusercontent.com/u/73579185?v=4">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css"><link rel="stylesheet" href="orb.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
   </head>
-  <body>
+  <body class="overflow-y-auto">
+    
     <header class="pb-5"> 
         <!-- Navbar here -->
         <nav class="navbar fixed-top navbar-expand-sm bg-body-tertiary">
           <div class="container">
-            <a class="navbar-brand nav-link active" href="index.html">
-                <img src="https://lh3.googleusercontent.com/a/ACg8ocLUWV8Q6qbwJw0WLlect7KEg8LXg3PfLWBto-Jkurv4GBwr=s288-c-no" class="rounded-circle" alt="" width="30" height="30">
-                Lucky's Profile</a>                 
-             <!-- <a class="nav-link" href="About.html">About me</a>                         -->
-                        
-             
+            <a class="dangrek navbar-brand nav-link" href="index.html">
+                <!-- <img src="https://lh3.googleusercontent.com/a/ACg8ocLUWV8Q6qbwJw0WLlect7KEg8LXg3PfLWBto-Jkurv4GBwr=s288-c-no" class="rounded-circle" alt="" width="30" height="30"> -->
+                Lux.
+              </a>                 
+             <div class="nav-link">
+              <a class="nav-link-a link-body-emphasis" href="#">Home</a>                            
+              <a class="nav-link-a link-body-emphasis" href="#">About</a>                            
+              <a class="nav-link-a link-body-emphasis" href="#">Service</a>                            
+              <a class="nav-link-a link-body-emphasis" href="#">Portfolio</a>
+              <a class="nav-link-a link-body-emphasis" href="#">Contact</a>  
+             </div>                          
+                            
          </div>
        </nav>
+       <!-- Navbar End -->
     </header>
-    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
-      <symbol id="check2" viewBox="0 0 16 16">
-        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
-      </symbol>
-      <symbol id="circle-half" viewBox="0 0 16 16">
-        <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"/>
-      </symbol>
-      <symbol id="moon-stars-fill" viewBox="0 0 16 16">
-        <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
-        <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"/>
-      </symbol>
-      <symbol id="sun-fill" viewBox="0 0 16 16">
-        <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
-      </symbol>
-    </svg>
+    <div>  <!-- Theme Button Start-->
+      <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+        <symbol id="check2" viewBox="0 0 16 16">
+          <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+        </symbol>
+        <symbol id="circle-half" viewBox="0 0 16 16">
+          <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"/>
+        </symbol>
+        <symbol id="moon-stars-fill" viewBox="0 0 16 16">
+          <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
+          <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"/>
+        </symbol>
+        <symbol id="sun-fill" viewBox="0 0 16 16">
+          <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
+        </symbol>
+      </svg>
+  
+      <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
+        <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center"
+                id="bd-theme"
+                type="button"
+                aria-expanded="false"
+                data-bs-toggle="dropdown"
+                aria-label="Toggle theme (auto)">
+          <svg class="bi my-1 theme-icon-active" width="1em" height="1em"><use href="#circle-half"></use></svg>
+          <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
+        </button>
+        <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
+          <li>
+            <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
+              <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em"><use href="#sun-fill"></use></svg>
+              Light
+              <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+            </button>
+          </li>
+          <li>
+            <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
+              <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em"><use href="#moon-stars-fill"></use></svg>
+              Dark
+              <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+            </button>
+          </li>
+          <li>
+            <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto" aria-pressed="true">
+              <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em"><use href="#circle-half"></use></svg>
+              Auto
+              <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+            </button>
+          </li>
+        </ul>
+      </div>  
+    </div> <!-- Theme Button End-->
+    <main class="pt-3">
+     
+        <div class="container col-xl-10 col-xxl-8 px-4 py-5 hero-lux">
+          <div class="row align-items-center g-lg-5 py-5 lh-sm ">
+            <div class="col-lg-7 text-lg-start">
+              <h1 class="display-4 fw-bold lh-1 text-body-emphasis mb-3">Lucky Yunque</h1>
+              <p class="col-lg-10 fs-4">Tech-Savvy. Problem-Solver. IT-Ready.</p>
+            </div>
 
-    <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
-      <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center"
-              id="bd-theme"
-              type="button"
-              aria-expanded="false"
-              data-bs-toggle="dropdown"
-              aria-label="Toggle theme (auto)">
-        <svg class="bi my-1 theme-icon-active" width="1em" height="1em"><use href="#circle-half"></use></svg>
-        <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
-      </button>
-      <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
-        <li>
-          <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
-            <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em"><use href="#sun-fill"></use></svg>
-            Light
-            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
-          </button>
-        </li>
-        <li>
-          <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
-            <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em"><use href="#moon-stars-fill"></use></svg>
-            Dark
-            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
-          </button>
-        </li>
-        <li>
-          <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto" aria-pressed="true">
-            <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em"><use href="#circle-half"></use></svg>
-            Auto
-            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
-          </button>
-        </li>
-      </ul>
+            <div class="col-md-10 mx-auto col-lg-5">
+              <img src="#" alt="" class="w-75">
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-body-tertiary rounded-3">
+          <div class="container-fluid py-5">
+            <div class="container-xl text-lg-start">
+              <h1 class="display-6 fw-bold">Diverse Expertise in the IT Industry</h1>
+            <p class="fs-5 lh-sm">
+              With a strong command of both hardware and software, I bring a well-rounded approach to IT management. My expertise spans network infrastructure, system administration, web design, and programming, ensuring seamless IT operations that align with industry best practices. Whether optimizing system performance, enhancing cybersecurity, or developing intuitive web solutions, I am committed to delivering efficient, secure, and innovative technology solutions that drive success.
+            </p>
+            <!-- <button class="btn text-body-emphasis btn-lg" type="button">Connect</button> -->
+            <!-- <a href="#" class="btn btn-light btn-lg">
+              Connect
+            </a> -->
+            </div>
+          </div>
+        </div>
+<!-- Exp -->
+
+<div class="container py-5">
+
+  <div class="col-md-12 pb-5">
+    <div class="card-body">
+      <h5 class="card-title display-6"><b>IT Officer</b> at Tom's World Philippines, HQ<br> Pasig City</h5>
+      <p class="card-text text-muted"> <i class="fas fa-calendar-alt mr-2"></i> May 2024 - Present</p>
+      <p class="card-text lead lh-sm text-justify">
+        As an IT Officer at Tom’s World Philippines, I specialize in System Administration, Helpdesk Support, Microsoft 365 Management, 
+        and SOPHOS Firewall Management. My role involves maintaining servers, managing IT inventory and supplies, and handling purchase 
+        requests for IT equipment to ensure smooth operations across the organization. I provide technical support both onsite and remotely, 
+        troubleshooting hardware, software, and network issues to minimize downtime and enhance productivity. With a strong background in 
+        IT infrastructure, I ensure optimal system performance, security, and efficiency, contributing to the company's seamless digital operations. 
+      </p>
+      <button class="btn btn-sm btn-outline-secondary py-0 px-2 me-2 mb-2 btn-H"><small>Ticketing</small></button>
+      <button class="btn btn-sm btn-outline-secondary py-0 px-2 me-2 mb-2 btn-H"><small>SOPHOS</small></button>
+      <button class="btn btn-sm btn-outline-secondary py-0 px-2 me-2 mb-2 btn-H"><small>System Administrator</small></button>
+      <button class="btn btn-sm btn-outline-secondary py-0 px-2 me-2 mb-2 btn-H"><small>MS365</small></button>
+      <button class="btn btn-sm btn-outline-secondary py-0 px-2 me-2 mb-2 btn-H"><small>IT Management</small></button>
+      <button class="btn btn-sm btn-outline-secondary py-0 px-2 me-2 mb-2 btn-H"><small>IT Procurement</small></button>
+      <button class="btn btn-sm btn-outline-secondary py-0 px-2 me-2 mb-2 btn-H"><small>Database Management</small></button>
+      <button class="btn btn-sm btn-outline-secondary py-0 px-2 me-2 mb-2 btn-H"><small>Windows Servers</small></button>
+      <button class="btn btn-sm btn-outline-secondary py-0 px-2 me-2 mb-2 btn-H"><small>VM Management</small></button>
+      <button class="btn btn-sm btn-outline-secondary py-0 px-2 me-2 mb-2 btn-H"><small>Remote Support</small></button>
     </div>
-    <main>
-        <!-- Main Here -->
-       <!-- Main -->
-        <div class="container"> 
+    </div>
+
+  <div class="col-md-12 pb-5">
+    <div class="card-body">
+      <h5 class="card-title display-6"><b>Research Analyst</b> at Office of the Chief of Staff for Operations, OG3, Philippine Army,<br> Taguig City</h5>
+      <p class="card-text text-muted"> <i class="fas fa-calendar-alt mr-2"></i> September 2021 - January 2024</p>
+      <p class="card-text lead lh-sm text-justify">
+        Working for the Philippine Army as a research analyst, 
+        I am in charge of conducting and overseeing research projects that aim to improve the organizational structure and effectiveness of the military. 
+        I analyze data and information from various sources, such as surveys, interviews, reports, and statistics to identify issues and opportunities for improvement. 
+        I also design and implement solutions and recommendations based on the research findings. I collaborate with other analysts, officers, 
+        and stakeholders to ensure the quality and relevance of the research outcomes. I take pride in contributing to the development and innovation of the Philippine Army. 
+      </p>
+      <button class="btn btn-sm btn-outline-secondary py-0 px-2 me-2 mb-2 btn-H"><small>Organization Development</small></button>
+      <button class="btn btn-sm btn-outline-secondary py-0 px-2 me-2 mb-2 btn-H"><small>MIS Development</small></button>
+      <button class="btn btn-sm btn-outline-secondary py-0 px-2 me-2 mb-2 btn-H"><small>System Management</small></button>
+      <button class="btn btn-sm btn-outline-secondary py-0 px-2 me-2 mb-2 btn-H"><small>Military Operations</small></button>
+      <button class="btn btn-sm btn-outline-secondary py-0 px-2 me-2 mb-2 btn-H"><small>ICT Management</small></button>
+      <button class="btn btn-sm btn-outline-secondary py-0 px-2 me-2 mb-2 btn-H"><small>ICT Procurement</small></button>
+      <button class="btn btn-sm btn-outline-secondary py-0 px-2 me-2 mb-2 btn-H"><small>Database Management</small></button>
+      <button class="btn btn-sm btn-outline-secondary py-0 px-2 me-2 mb-2 btn-H"><small>Database Statistics</small></button>
       
-          <!-- <div class="container-fluid px-0">
-            <div class="row">
-              <div class="col-md-12">
-                <img src="/Assets/1280-720.png" class="img-fluid w-100 h-auto" alt="Placeholder 960">
-              </div>
-            </div>
-          </div> -->
-
-          <div class="container pt-5 cont-1">
-           <div class="text-center">
-            <h1 class="fs-1">Welcome</h1>
-           </div>
-            <!-- <img class="d-block mx-auto mb-4 rounded-circle" src="https://media.licdn.com/dms/image/D5603AQFltGw9NnK10w/profile-displayphoto-shrink_800_800/0/1665396776784?e=1695859200&v=beta&t=NOus8E2y2dF1_4oqsB7UzOr7QBE0O0zkt7R8ukrQRPU" alt="Icon" width="72" height="72"> -->
-            <!-- <h1 class="display-5 mx-auto type-1 ">IT Specialist</h1> -->
-            <div class="container col-ms-10 col-md-10 col-lg-10 col-xl-9 mx-auto">
-              <!-- <p class="lead mb-4 text-justify">An IT specialist is a professional who specializes in information technology. 
-                They are responsible for managing and maintaining computer systems, networks, software, and security. They also provide 
-                technical support to users and troubleshoot any issues that arise. IT specialists work in a variety of industries, 
-                including healthcare, finance, and education. They are typically required to have a bachelor’s degree in computer science
-                 or a related field, as well as relevant certifications. If you’re interested in pursuing a career as an IT specialist, it’s
-                  important to have strong problem-solving skills and the ability to work well under pressure.</p> -->
-              <div class="gap-2 text-center ">
-                <a href="About.html" class="btn btn-secondary btn-lg px-4 gap-3 btn-H">Projects</a>
-                <a href="#" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop" class="btn btn-outline-danger btn-lg px-4 btn-H">Get in touch <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-in-up-right" viewBox="0 0 16 16">
-                  <path fill-rule="evenodd" d="M6.364 13.5a.5.5 0 0 0 .5.5H13.5a1.5 1.5 0 0 0 1.5-1.5v-10A1.5 1.5 0 0 0 13.5 1h-10A1.5 1.5 0 0 0 2 2.5v6.636a.5.5 0 1 0 1 0V2.5a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 .5.5v10a.5.5 0 0 1-.5.5H6.864a.5.5 0 0 0-.5.5z"/>
-                  <path fill-rule="evenodd" d="M11 5.5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793l-8.147 8.146a.5.5 0 0 0 .708.708L10 6.707V10.5a.5.5 0 0 0 1 0v-5z"/>
-                </svg></a>
-                
-                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                  <div class="modal-dialog modal-dialog-centered modal-sm">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h1 class="modal-title fs-3" id="staticBackdropLabel">Get in touch</h1>
-                        
-                      </div>
-                      <div class="modal-body">
-                        <a class="dropdown-item fs-5" target="_blank" href="resume-0021/file-18262/Lucky_Yunque_-_IT_Specialist-I.pdf">Resume</a>
-                        <a class="dropdown-item fs-5" target="_blank" href="https://www.linkedin.com/in/lucky-yunque-a856011b2">Linkedin</a>
-                        <a class="dropdown-item fs-5" target="_blank" href="https://www.instagram.com/yunquelucky/">Instagram</a>
-                        <a class="dropdown-item fs-5" target="_blank" href="mailto:yunquelucky@Gmail.com">Email</a>
-                      </div>
-                      <div class="modal-footer">
-                        <button type="button" data-bs-dismiss="modal" class="btn btn-danger" aria-label="Close">Close</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                
-              </div>
-            </div>
-            <!-- HERE -->
-            <!-- <div class='wrap'>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-              <div class='c'></div>
-            </div>
-             -->
-        <div class="container mt-5">
-          <div class="row g-0">
-            <!-- Break 1 -->
-            <div class="col-lg-6 col-sm-12 px-4 pb-3">
-              <div class="progress-group">
-                <div class="align-items-end">
-                  
-                  <div><i class="fas fa-handshake me-2"></i>Ability to work in a team</div>
-                  
-                  <!-- <div class="ms-auto font-weight-bold me-2">191.235</div>
-                  <div class="text-muted small">(56%)</div> -->
-                </div>
-                <div class="progress-group-bars">
-                  <div class="progress progress-thin">
-                    <div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Break -->
-
-            <!-- Break 1 -->
-            <div class="col-lg-6 col-sm-12 px-4 pb-3">
-              <div class="progress-group">
-                <div class="progress-group-header align-items-end">
-                 
-                  <div> <i class="fa fa-chalkboard-teacher me-2"></i>Technical Support</div>
-                  <!-- <div class="ms-auto font-weight-bold me-2">191.235</div>
-                  <div class="text-muted small">(56%)</div> -->
-                </div>
-                <div class="progress-group-bars">
-                  <div class="progress progress-thin">
-                    <div class="progress-bar bg-danger" role="progressbar" style="width: 99%" aria-valuenow="99" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Break -->
-
-            <!-- Break 1 -->
-            <div class="col-lg-6 col-sm-12 px-4 pb-3">
-              <div class="progress-group">
-                <div class="progress-group-header align-items-end">
-                 
-                  <div> <i class="fas fa-network-wired me-2"></i>Computer Networking</div>
-                  <!-- <div class="ms-auto font-weight-bold me-2">191.235</div>
-                  <div class="text-muted small">(56%)</div> -->
-                </div>
-                <div class="progress-group-bars">
-                  <div class="progress progress-thin">
-                    <div class="progress-bar bg-danger" role="progressbar" style="width: 93%" aria-valuenow="93" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Break -->
-
-            <!-- Break 1 -->
-            <div class="col-lg-6 col-sm-12 px-4 pb-3">
-              <div class="progress-group">
-                <div class="progress-group-header align-items-end">
-                  
-                  <div><i class="fas fa-laptop-code me-2"></i>Web Development</div>
-                  <!-- <div class="ms-auto font-weight-bold me-2">191.235</div>
-                  <div class="text-muted small">(56%)</div> -->
-                </div>
-                <div class="progress-group-bars">
-                  <div class="progress progress-thin">
-                    <div class="progress-bar bg-danger" role="progressbar" style="width: 86%" aria-valuenow="86" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Break -->
-              <!-- Break 1 -->
-              <div class="col-lg-6 col-sm-12 px-4 pb-3">
-                <div class="progress-group">
-                  <div class="progress-group-header align-items-end">
-                   
-                    <div> <i class="fas fa-desktop me-2"></i>System Administrator</div>
-                    <!-- <div class="ms-auto font-weight-bold me-2">191.235</div>
-                    <div class="text-muted small">(56%)</div> -->
-                  </div>
-                  <div class="progress-group-bars">
-                    <div class="progress progress-thin">
-                      <div class="progress-bar bg-danger" role="progressbar" style="width: 83%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- Break -->
-
-            <!-- Break 1 -->
-            <div class="col-lg-6 col-sm-12 px-4 pb-3">
-              <div class="progress-group">
-                <div class="progress-group-header align-items-end">
-                 
-                  <div> <i class="fas fa-laptop me-2"></i>Grapics and Design</div>
-                  <!-- <div class="ms-auto font-weight-bold me-2">191.235</div>
-                  <div class="text-muted small">(56%)</div> -->
-                </div>
-                <div class="progress-group-bars">
-                  <div class="progress progress-thin">
-                    <div class="progress-bar bg-danger" role="progressbar" style="width: 98%" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Break -->
-
-            
-            <!-- Break 1 -->
-            <div class="col-lg-6 col-sm-12 px-4 pb-3">
-              <div class="progress-group">
-                <div class="progress-group-header align-items-end">
-                 
-                  <div> <i class="fas fa-database me-2"></i>Database Management</div>
-                  <!-- <div class="ms-auto font-weight-bold me-2">191.235</div>
-                  <div class="text-muted small">(56%)</div> -->
-                </div>
-                <div class="progress-group-bars">
-                  <div class="progress progress-thin">
-                    <div class="progress-bar bg-danger" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Break -->
-
-                        <!-- Break 1 -->
-                        <div class="col-lg-6 col-sm-12 px-4 pb-3">
-                          <div class="progress-group">
-                            <div class="progress-group-header align-items-end">
-                             
-                              <div> <i class="fab fa-github-alt me-2"></i>Programming</div>
-                              <!-- <div class="ms-auto font-weight-bold me-2">191.235</div>
-                              <div class="text-muted small">(56%)</div> -->
-                            </div>
-                            <div class="progress-group-bars">
-                              <div class="progress progress-thin">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 83%" aria-valuenow="83" aria-valuemin="0" aria-valuemax="100"></div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <!-- Break -->
-
-          </div>
-        </div>
-          
-        <!-- New entry -->
-        
-        <div class="container pt-3">
-          <div class="text-center">
-            <hr>
-            <!-- <h1 class="fs-1">Experience</h1> -->
-            <h1 class="display-5 mx-auto type-1 ">Experience</h1>
-            <hr>
-          </div>
-
-          <!-- EX 1 -->
-          <div class="card-dark mb-3">
-            <div class="row g-0">
-              <!-- <div class="col-md-4">
-               <a href="#" target="_blank"> <img src="#" class="img-fluid rounded-start" id="Img-H" alt="#"></a>
-                </div> -->
-              <div class="col-md-12">
-              <div class="card-body">
-                <h5 class="card-title display-6"><b>Research Analyst</b> at Office of the Chief of Staff for Operations, OG3, Philippine Army,<br> Taguig City</h5>
-                <p class="card-text text-muted"> <i class="fas fa-calendar-alt mr-2"></i> September 2021 - January 2024</p>
-                <p class="card-text lead lh-sm text-justify">
-                  Working for the Philippine Army as a research analyst, 
-                  I am in charge of conducting and overseeing research projects that aim to improve the organizational structure and effectiveness of the military. 
-                  I analyze data and information from various sources, such as surveys, interviews, reports, and statistics to identify issues and opportunities for improvement. 
-                  I also design and implement solutions and recommendations based on the research findings. I collaborate with other analysts, officers, 
-                  and stakeholders to ensure the quality and relevance of the research outcomes. I take pride in contributing to the development and innovation of the Philippine Army. 
-                </p>
-                <button class="btn btn-sm btn-outline-secondary py-0 px-2 me-2 mb-2 btn-H"><small>Organization Development</small></button>
-                <button class="btn btn-sm btn-outline-secondary py-0 px-2 me-2 mb-2 btn-H"><small>MIS Development</small></button>
-                <button class="btn btn-sm btn-outline-secondary py-0 px-2 me-2 mb-2 btn-H"><small>System Management</small></button>
-                <button class="btn btn-sm btn-outline-secondary py-0 px-2 me-2 mb-2 btn-H"><small>Military Operations</small></button>
-                <button class="btn btn-sm btn-outline-secondary py-0 px-2 me-2 mb-2 btn-H"><small>ICT Management</small></button>
-                <button class="btn btn-sm btn-outline-secondary py-0 px-2 me-2 mb-2 btn-H"><small>ICT Procurement</small></button>
-                <button class="btn btn-sm btn-outline-secondary py-0 px-2 me-2 mb-2 btn-H"><small>Database Management</small></button>
-                <button class="btn btn-sm btn-outline-secondary py-0 px-2 me-2 mb-2 btn-H"><small>Database Statistics</small></button>
-                
-              </div>
-              </div>
-            </div>
-            </div>
-        <!-- EX -->
-
-           <!-- EX 1 -->
-           <div class="card-dark mb-3">
-            <div class="row g-0">
-              <!-- <div class="col-md-4">
-               <a href="#" target="_blank"> <img src="#" class="img-fluid rounded-start" id="Img-H" alt="#"></a>
-                </div> -->
-              <div class="col-md-12">
-              <div class="card-body">
-                <h5 class="card-title display-6"><b>IT Specialist</b> at Technomed International Inc., <br>San Juan City</h5>
-                <p class="card-text text-muted"><i class="fas fa-calendar-alt mr-2"></i> June 2019 - September 2021</p>
-                <p class="card-text lead lh-sm text-justify">
-                  As an IT Specialist at Technomed International Inc., I am responsible for maintaining and troubleshooting the IT infrastructure of a leading healthcare company. 
-                  I manage the servers, networks, databases, and security systems that support the daily operations and data management of the organization. 
-                  I also provide technical support and training to the staff and clients who use the IT systems. 
-                  I enjoy working in a dynamic and challenging environment where I can apply my skills and knowledge to solve problems and improve efficiency.
-                </p>
-                <button class="btn btn-sm btn-outline-secondary py-0 px-2 me-2 mb-2 btn-H"><small>Web Development</small></button>
-                <button class="btn btn-sm btn-outline-secondary py-0 px-2 me-2 mb-2 btn-H"><small>Window Server</small></button>
-                <button class="btn btn-sm btn-outline-secondary py-0 px-2 me-2 mb-2 btn-H"><small>Network Firewall</small></button>
-                <button class="btn btn-sm btn-outline-secondary py-0 px-2 me-2 mb-2 btn-H"><small>Networking</small></button>
-                <button class="btn btn-sm btn-outline-secondary py-0 px-2 me-2 mb-2 btn-H"><small>ICT Maintenance</small></button>
-                
-              </div>
-              </div>
-            </div>
-            </div>
-        <!-- EX -->
-
-          <!-- EX 1 -->
-          <div class="card-dark mb-3">
-            <div class="row g-0">
-              <!-- <div class="col-md-4">
-               <a href="#" target="_blank"> <img src="#" class="img-fluid rounded-start" id="Img-H" alt="#"></a>
-                </div> -->
-              <div class="col-md-12">
-              <div class="card-body">
-                <h5 class="card-title display-6"><b>Internship</b> at United Limsun International Trading Corp., <br> Quezon City</h5>
-                <p class="card-text text-muted"><i class="fas fa-calendar-alt mr-2"></i> November 2018 - March 2019</p>
-                <p class="card-text lead lh-sm text-justify">
-                  The first organization I worked for helped me develop my technical and analytical skills, which gave me the knowledge to work for a fast-paced company that provides service, 
-                  manpower, and quality products to our consumers. I learned how to use various software tools and platforms to deliver efficient 
-                  and effective solutions for different projects and tasks. I also gained valuable experience in working with diverse teams and clients, 
-                  as well as handling complex and challenging situations. 
-                  I am grateful for the opportunity to grow and learn from my previous organization.  
-                </p>
-                <button class="btn btn-sm btn-outline-secondary py-0 px-2 me-2 mb-2 btn-H"><small>CCTVs</small></button>
-                <button class="btn btn-sm btn-outline-secondary py-0 px-2 me-2 mb-2 btn-H"><small>Remote Support</small></button>
-                <button class="btn btn-sm btn-outline-secondary py-0 px-2 me-2 mb-2 btn-H"><small>Printer and Computer Networks</small></button>
-                <button class="btn btn-sm btn-outline-secondary py-0 px-2 me-2 mb-2 btn-H"><small>Firewall</small></button>
-                <button class="btn btn-sm btn-outline-secondary py-0 px-2 me-2 mb-2 btn-H"><small>POS Equipments</small></button>
-                <button class="btn btn-sm btn-outline-secondary py-0 px-2 me-2 mb-2 btn-H"><small>Basic troubleshooting</small></button>
-                
-              </div>
-              </div>
-            </div>
-            </div>
-        <!-- EX -->
-
-        </div>
-           
-
-
-      </div>
     </div>
+    </div>
+
+    <div class="col-md-12 pb-5">
+      <div class="card-body">
+        <h5 class="card-title display-6"><b>IT Specialist</b> at Technomed International Inc., <br>San Juan City</h5>
+        <p class="card-text text-muted"><i class="fas fa-calendar-alt mr-2"></i> June 2019 - September 2021</p>
+        <p class="card-text lead lh-sm text-justify">
+          As an IT Specialist at Technomed International Inc., I am responsible for maintaining and troubleshooting the IT infrastructure of a leading healthcare company. 
+          I manage the servers, networks, databases, and security systems that support the daily operations and data management of the organization. 
+          I also provide technical support and training to the staff and clients who use the IT systems. 
+          I enjoy working in a dynamic and challenging environment where I can apply my skills and knowledge to solve problems and improve efficiency.
+        </p>
+        <button class="btn btn-sm btn-outline-secondary py-0 px-2 me-2 mb-2 btn-H"><small>Web Development</small></button>
+        <button class="btn btn-sm btn-outline-secondary py-0 px-2 me-2 mb-2 btn-H"><small>Window Server</small></button>
+        <button class="btn btn-sm btn-outline-secondary py-0 px-2 me-2 mb-2 btn-H"><small>Network Firewall</small></button>
+        <button class="btn btn-sm btn-outline-secondary py-0 px-2 me-2 mb-2 btn-H"><small>Networking</small></button>
+        <button class="btn btn-sm btn-outline-secondary py-0 px-2 me-2 mb-2 btn-H"><small>ICT Maintenance</small></button>
+        
+      </div>
+      </div>
+
+      <div class="col-md-12 pb-5">
+        <div class="card-body">
+          <h5 class="card-title display-6"><b>Internship</b> at United Limsun International Trading Corp., <br> Quezon City</h5>
+          <p class="card-text text-muted"><i class="fas fa-calendar-alt mr-2"></i> November 2018 - March 2019</p>
+          <p class="card-text lead lh-sm text-justify">
+            The first organization I worked for helped me develop my technical and analytical skills, which gave me the knowledge to work for a fast-paced company that provides service, 
+            manpower, and quality products to our consumers. I learned how to use various software tools and platforms to deliver efficient 
+            and effective solutions for different projects and tasks. I also gained valuable experience in working with diverse teams and clients, 
+            as well as handling complex and challenging situations. 
+            I am grateful for the opportunity to grow and learn from my previous organization.  
+          </p>
+          <button class="btn btn-sm btn-outline-secondary py-0 px-2 me-2 mb-2 btn-H"><small>CCTVs</small></button>
+          <button class="btn btn-sm btn-outline-secondary py-0 px-2 me-2 mb-2 btn-H"><small>Remote Support</small></button>
+          <button class="btn btn-sm btn-outline-secondary py-0 px-2 me-2 mb-2 btn-H"><small>Printer and Computer Networks</small></button>
+          <button class="btn btn-sm btn-outline-secondary py-0 px-2 me-2 mb-2 btn-H"><small>Firewall</small></button>
+          <button class="btn btn-sm btn-outline-secondary py-0 px-2 me-2 mb-2 btn-H"><small>POS Equipments</small></button>
+          <button class="btn btn-sm btn-outline-secondary py-0 px-2 me-2 mb-2 btn-H"><small>Basic troubleshooting</small></button>
+          
+        </div>
+        </div>
+</div>
 
     </main>
+    
 
     <footer class="text-center">
-      <!-- Grid container -->
-      <div class="container p-4 pb-0">
-        <!-- Section: CTA -->
-        <section class="">
-          <p class="d-flex justify-content-center align-items-center">
-            <span class="me-3">Make Arrangement! </span>
-            <a href="#" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop" class="btn btn-outline-danger btn-lg px-4 btn-H">Get in touch <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-in-up-right" viewBox="0 0 16 16">
-              <path fill-rule="evenodd" d="M6.364 13.5a.5.5 0 0 0 .5.5H13.5a1.5 1.5 0 0 0 1.5-1.5v-10A1.5 1.5 0 0 0 13.5 1h-10A1.5 1.5 0 0 0 2 2.5v6.636a.5.5 0 1 0 1 0V2.5a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 .5.5v10a.5.5 0 0 1-.5.5H6.864a.5.5 0 0 0-.5.5z"/>
-              <path fill-rule="evenodd" d="M11 5.5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793l-8.147 8.146a.5.5 0 0 0 .708.708L10 6.707V10.5a.5.5 0 0 0 1 0v-5z"/>
-            </svg></a>
-          </p>
-        </section>
-        <!-- Section: CTA -->
-      </div>
-      <!-- Grid container -->
-  
       <!-- Copyright -->
       <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-        © 2023 Copyright:
-        <a class="link-danger" href="mailto:yunquelucky@Gmail.com">Yunque Lucky</a>
+        © 2025 Copyright:
+        <a class="link-body-emphasis" href="mailto:yunquelucky@Gmail.com">Yunque Lucky</a>
       </div>
       <!-- Copyright -->
     </footer>
